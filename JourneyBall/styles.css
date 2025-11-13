@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #333;
+    overflow: hidden;
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+#homeButton {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #fff;
+    background: rgba(0, 194, 255, 0.2);
+    border: 2px solid rgba(0, 194, 255, 0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+#homeButton:hover {
+    background: rgba(0, 194, 255, 0.4);
+    border-color: rgba(0, 194, 255, 0.8);
+    box-shadow: 0 0 15px rgba(0, 194, 255, 0.6);
+    transform: translateY(-2px);
+}
+
+#gameTitle {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+    padding: 20px 0;
+    text-align: center;
+    text-shadow: 0 0 20px rgba(16, 153, 187, 0.8), 0 0 40px rgba(16, 153, 187, 0.4);
+    letter-spacing: 2px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+#gameContainer {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    min-height: 0;
+}
+
+#scoreDisplay {
+    color: #fff;
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 15px 0;
+    text-align: center;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#scoreDisplay p {
+    margin: 5px 0;
+}
+
+#scoreDisplay strong {
+    color: #1099bb;
+}
+
+#scoreDisplay span {
+    color: #00d4ff;
+    font-weight: 700;
+}
+
+#gameControls {
+    color: #ccc;
+    font-size: 1rem;
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#gameControls p {
+    margin: 5px 0;
+}
+
+#gameControls strong {
+    color: #1099bb;
+}
+
+#gameFooter {
+    color: #aaa;
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 15px 0;
+    text-align: center;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+#gameFooter a {
+    color: #1099bb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#gameFooter a:hover {
+    color: #00d4ff;
+    text-decoration: underline;
+}
