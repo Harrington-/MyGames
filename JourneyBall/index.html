@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey Ball</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a href="../index.html" id="homeButton">Home</a>
+    <h1 id="gameTitle">Journey Ball</h1>
+    <div id="gameContainer"></div>
+    <div id="scoreDisplay">
+        <p><strong>Current Height:</strong> <span id="currentHeight">0</span></p>
+        <p><strong>Best Height:</strong> <span id="bestHeight">0</span></p>
+    </div>
+    <div id="gameControls">
+        <p><strong>Controls:</strong></p>
+        <p>A/D - Roll Left/Right</p>
+        <p>Space - Jump (hold to bounce)</p>
+        <p>R - Reset (when grounded)</p>
+    </div>
+    <footer id="gameFooter">
+        <p>Created by <strong>Blake Harrington</strong> | <a href="https://github.com/Harrington-" target="_blank">GitHub</a> | <a href="../index.html">Game Portal</a></p>
+    </footer>
+    <!-- Load a specific version of PixiJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.3.2/pixi.min.js"></script>
+    <!-- Load Rapier physics engine -->
+    <script src="https://cdn.jsdelivr.net/npm/@react-three/rapier@0.13.1/dist/rapier.js"></script>
+    <!-- Then load our game code (plain scripts, no modules) -->
+    <script src="src/utils.js"></script>
+    <script src="src/ball.js"></script>
+    <script src="src/platform_manager.js"></script>
+    <script src="src/camera.js"></script>
+    <script src="src/ui_manager.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
